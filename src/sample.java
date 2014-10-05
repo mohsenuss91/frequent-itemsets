@@ -14,8 +14,6 @@ public class sample {
 	static ArrayList<HashSet<String>> test = new ArrayList<HashSet<String>>();
 	static HashMap<HashSet<String>,Integer> total = new HashMap<HashSet<String>,Integer>();
 
-	static double supportThreshold = 0.5;
-	static double confidenceThreshold = 0.7;
 
 		static void can(HashMap<HashSet<String>,Integer> m, int k, double sup)
 		{
@@ -104,7 +102,7 @@ public class sample {
 	 */
 	public static void main(String[] args) throws FileNotFoundException {
 
-		Scanner dataFile = new Scanner(new File("C:/Users/Smriti/Dropbox/association-rule-test-data.txt")); //Enter the path of association rules here
+		Scanner dataFile = new Scanner(new File("association-rule-test-data.txt")); //Enter the path of association rules here
 	
 		HashMap<HashSet<String>,Integer> h = new HashMap<HashSet<String>,Integer>(); //for frequent 1-itemsets
 		
